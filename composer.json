@@ -1,0 +1,42 @@
+{
+    "name": "tassoevan/skeleton",
+    "description": "Minimal PHP application structure",
+    "license": "MIT",
+
+    "authors": [
+        {
+            "name": "Tasso Evangelista",
+            "email": "tasso@tassoevan.me"
+        }
+    ],
+
+    "require": {
+        "slim/slim": "~2.4.0",
+        "slim/views": "~0.1.0",
+        "slim/extras": "~2.0.3",
+        "twig/twig": "~1.15.0",
+        "j4mie/paris": "~1.4.0",
+
+        "components/jquery": "~1.10.0",
+        "components/bootstrap": "~3.1.0"
+    },
+
+    "require-dev": {
+        "phpunit/phpunit": "~4.1.0",
+        "phpunit/dbunit": "~1.3.0",
+        "squizlabs/php_codesniffer": "~1.5.0",
+        "bldr-io/bldr": "~3.0.0"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "": "private/src/"
+        }
+    },
+
+    "config": {
+        "bin-dir": "private/tools/",
+        "vendor-dir": "private/vendor/",
+        "component-dir": "public/assets/components/"
+    }
+}

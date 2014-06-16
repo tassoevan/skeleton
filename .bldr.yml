@@ -1,0 +1,18 @@
+bldr:
+    name: tassoevan/skeleton
+    description: Minimal PHP application structure
+    profiles:
+        default:
+            description: Sample Profile
+            tasks:
+                - sampleTask
+    tasks:
+        sampleTask:
+            description: Runs a sleep for 5 seconds, then sends a message to the screen
+            calls:
+                -
+                    type: sleep
+                    seconds: 5
+                -
+                    type: notify
+                    message: Finished Sleeping. Ending now.
