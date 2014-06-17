@@ -30,8 +30,11 @@
 
     "autoload": {
         "psr-4": {
-            "": "private/src/"
-        }
+            "MyCompany\\MyApplication\\": "private/classes/"
+        },
+        "files": [
+            "private/boot.php"
+        ]
     },
 
     "config": {
