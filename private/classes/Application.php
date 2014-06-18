@@ -37,7 +37,7 @@ class Application extends Slim
         if (count($configFiles) == 1) {
             return substr(basename($configFiles[0]), 0, -4);
         } else {
-            throw new RuntimeException('application mode not defined');   
+            throw new RuntimeException('application mode not defined');
         }
     }
 

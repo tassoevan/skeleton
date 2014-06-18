@@ -9,7 +9,8 @@ bldr:
         tests:
             description: Run unit tests
             tasks:
-                - runTestsTask
+                - runUnitTestsTask
+                - runCodeQualityCheckTask
     tasks:
         sampleTask:
             description: Runs a sleep for 5 seconds, then sends a message to the screen
@@ -21,13 +22,26 @@ bldr:
                     type: notify
                     message: Finished Sleeping. Ending now.
 
-        runTestsTask:
+        runUnitTestsTask:
             description: Run unit tests over PHPUnit
             calls:
                 -
                     type: exec
                     executable: php
+                    output: /dev/null
                     arguments:
                         - private/tools/phpunit
                         - --configuration
                         - private/tests/phpunit.xml
+        runCodeQualityCheckTask:
+            description: Run code quality check over PHP CodeSniffer
+            calls:
+                -
+                    type: exec
+                    executable: php
+                    arguments:
+                        - private/tools/phpcs
+                        - --report=full
+                        - --report-file=private/tests/docs/code-quality-report.txt
+                        - --standard=PSR2
+                        - private/classes
