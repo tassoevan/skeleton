@@ -6,6 +6,10 @@ bldr:
             description: Sample Profile
             tasks:
                 - sampleTask
+        tests:
+            description: Run unit tests
+            tasks:
+                - runTestsTask
     tasks:
         sampleTask:
             description: Runs a sleep for 5 seconds, then sends a message to the screen
@@ -16,3 +20,14 @@ bldr:
                 -
                     type: notify
                     message: Finished Sleeping. Ending now.
+
+        runTestsTask:
+            description: Run unit tests over PHPUnit
+            calls:
+                -
+                    type: exec
+                    executable: php
+                    arguments:
+                        - private/tools/phpunit
+                        - --configuration
+                        - private/tests/phpunit.xml
