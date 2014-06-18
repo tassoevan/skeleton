@@ -9,16 +9,19 @@ What is this
 **Skeleton** is a minimal framework-like file structure for a small/medium PHP
 application. It uses a collection of libraries:
 
-* Slim microframework (with Views and Extras);
-* Twig template engine;
-* Paris active record and Idiorm ORM;
-* jQuery and Twitter Bootstrap.
+* [Slim](http://slimframework.com/) microframework (with
+  [Views](http://github.com/codeguy/Slim-Views) and
+  [Extras](http://github.com/codeguy/Slim-Extras));
+* [Twig](http://twig.sensiolabs.org/) template engine;
+* [Idiorm/Paris](http://j4mie.github.io/idiormandparis/) active record;
+* [jQuery](http://jquery.com/) and
+  [Twitter Bootstrap](http://getbootstrap.com/).
 
 It also use some tools for development and deployment:
 
-* PHPUnit with DBUnit;
-* PHP CodeSniffer;
-* Bldr.
+* [PHPUnit](http://phpunit.de/);
+* [PHP_CodeSniffer](http://pear.php.net/package/PHP_CodeSniffer);
+* [Bldr](http://bldr.io/).
 
 How to install
 --------------
@@ -32,8 +35,8 @@ $ composer --working-dir=/path/to/app update
 
 This will install all libraries and tools.
 
-How to run
-----------
+How to configure
+----------------
 
 There are two main directories: `public` and `private`. `public` is the public
 www folder that must be served via HTTP server, while `private` contains the
