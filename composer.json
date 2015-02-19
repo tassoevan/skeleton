@@ -39,10 +39,12 @@
     "config": {
         "bin-dir": "private/tools/",
         "vendor-dir": "private/vendor/",
-        "component-dir": "public/assets/components/"
+        "component-dir": "public/assets/components/",
+        "process-timeout": 0
     },
 
     "scripts": {
+        "serve": "php -S 127.0.0.1:8000 -t public/",
         "test": "php private/tools/phpunit --configuration private/tests/phpunit.xml",
         "sniff": "php private/tools/phpcs --report=full --standard=PSR2 private/classes"
     }
