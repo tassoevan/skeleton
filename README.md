@@ -1,5 +1,5 @@
-Skeleton
-========
+Evan Skeleton
+=============
 
 *Minimal PHP application structure*
 
@@ -20,9 +20,7 @@ application. It uses a collection of libraries:
 It also use some tools for development and deployment:
 
 * [PHPUnit](http://phpunit.de/);
-* [PHP_CodeSniffer](http://pear.php.net/package/PHP_CodeSniffer);
-* [Bldr](http://bldr.io/).
-
+* [PHP_CodeSniffer](http://pear.php.net/package/PHP_CodeSniffer).
 How to install
 --------------
 
