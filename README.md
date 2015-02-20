@@ -21,6 +21,7 @@ It also use some tools for development and deployment:
 
 * [PHPUnit](http://phpunit.de/);
 * [PHP_CodeSniffer](http://pear.php.net/package/PHP_CodeSniffer).
+
 How to install
 --------------
 
