@@ -17,8 +17,8 @@
         "twig/twig": "~1.15.0",
         "j4mie/paris": "~1.4.0",
 
-        "components/jquery": "~1.10.0",
-        "components/bootstrap": "~3.1.0"
+        "components/bootstrap": "~3.3.0",
+        "robloach/component-installer": "0.0.12.*"
     },
 
     "require-dev": {
@@ -39,7 +39,7 @@
     "config": {
         "bin-dir": "private/tools/",
         "vendor-dir": "private/vendor/",
-        "component-dir": "public/assets/components/",
+        "component-dir": "public/assets/vendor/",
         "process-timeout": 0
     },
 
