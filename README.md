@@ -1,5 +1,5 @@
-Evan Skeleton
-=============
+tassoevan/skeleton
+==================
 
 *Minimal PHP application structure*
 
